@@ -1,0 +1,55 @@
+<! DOCTYPE HTML> 
+<html lang = en> 
+<head>
+      <link href="debt_ratio_see.css" rel="stylesheet" type="text/css">
+    <meta charset="utf-8">
+    
+    <title> 
+       Debt Ratio Calculator 
+        
+    </title>
+    </head>
+    <body>
+        <div id ="container">
+    <h2>   Calculate Debt Ratio Here     </h2>
+  
+     <form name="debt_ratio_data_form">
+			
+				<table style="margin:10px;">
+				
+					<tr>
+						<td>Current Total Liabilities :</td>
+						<td><input type="text" id='liabilities_amt' name="liabilities_amt" size="10" class="inputs"/></td>
+					</tr>
+					
+					<tr>
+						<td>Current Total Receivables :</td>
+						<td><input type="text" id='receivables_amt' name="receivables_amt" size="10" class="inputs"/></td>
+					</tr>
+				
+					<tr>
+						<td><input type="button" id='submit' onclick="validate()" value="Calculate" class="input"/></td>
+						<td><input type="button" id='reset' onclick="startOver()" value="Start Over" class="input" /></td>
+					</tr>
+				
+				
+				</table>
+			
+			
+			</form>  
+        
+        <div>
+        <h3> Result </h3>
+        
+        <p id = "calculated_result_debt_ratio"> </p>
+        
+        </div>
+    
+        </div>
+     <script type="text/javascript" src="debt_ratio.js"></script>
+   
+    </body>
+
+
+
+</html>

@@ -1,0 +1,63 @@
+<! DOCTYPE HTML> 
+<html lang = en> 
+<head>
+     
+    <meta charset="utf-8">
+    <link href="cagr.css" rel="stylesheet" type="text/css">
+    
+    <title> 
+        Compound Annual Growth Rate Calculator 
+        
+    </title>
+    </head>
+    <body>
+        <div id= "container">
+    <h2>   Calculate Compound Annual Growth Rate Here     </h2>
+  
+     <form name="final_begin_time_value_form">
+			
+				<table style="margin:10px;">
+				
+					<tr>
+						<td>Beginning Asset Value:</td>
+						<td><input type="text" id='beg_ass_amt' name="beg_ass_amt" size="10" class="inputs"/></td>
+					</tr>
+					
+					<tr>
+						<td>Final Asset Value:</td>
+						<td><input type="text" id='final_ass_amt' name="final_ass_amt" size="10" class="inputs"/></td>
+					</tr>
+					
+					<tr>
+						<td>Time Span (Years) </td>
+						<td><input type="text" id="time_span_amt" name="time_span_amt" size="10" class="inputs"/></td>
+					</tr>
+					
+				
+					<tr>
+						<td><input type="button" id='submit' onclick="validate()" value="Calculate" class="input"/></td>
+						<td><input type="button" id='reset' onclick="startOver()" value="Start Over" class="input" /></td>
+					</tr>
+				
+				
+				</table>
+			
+			
+			</form>  
+        
+        <div>
+        <h3> Result </h3>
+        
+        <p id = "calculated_compound_annual_growth_rate"> </p>
+        
+        </div>
+    
+        
+    
+   <script type="text/javascript" src="cagr.js"></script>
+        </div> 
+    </body>
+
+
+
+</html>

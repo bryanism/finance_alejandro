@@ -1,0 +1,56 @@
+<! DOCTYPE HTML> 
+<html lang = en> 
+<head>
+      <link href="profit_see.css" rel="stylesheet" type="text/css">
+    <meta charset="utf-8">
+    
+    <title> 
+      Profitability Index Calculator 
+        
+    </title>
+    </head>
+    <body>
+        <div id ="container">
+    <h2>   Calculate Profitability Index Here     </h2>
+  
+     <form name="profit_index_form">
+			
+				<table style="margin:10px;">
+				
+					<tr>
+						<td>Present Value of Cash Flows from Investment:</td>
+						<td><input type="text" id= "pv_investment_amt" name="pv_investment_amt" size="10" class="inputs"/></td>
+					</tr>
+					
+					<tr>
+						<td>Cost of Investment Amount:</td>
+						<td><input type="text" id= "cost_invest_amt"  name= "cost_investment_amt" size="10" class="inputs"/></td>
+					</tr>
+					
+				
+					<tr>
+						<td><input type="button" id='submit' onclick="validate()" value="Calculate" class="input"/></td>
+						<td><input type="button" id='reset' onclick="startOver()" value="Start Over" class="input" /></td>
+					</tr>
+				
+				
+				</table>
+			
+			
+			</form>  
+        
+        <div>
+        <h3> Result </h3>
+        
+        <p id = "resultprofitability"> </p>
+        
+        </div>
+    
+    
+        </div>
+   <script type="text/javascript" src="profit_index.js"></script>
+    </body>
+
+
+
+</html>

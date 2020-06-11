@@ -1,0 +1,93 @@
+<! DOCTYPE HTML> 
+<html lang = en> 
+<head>
+      <link href="netI_profM.css" rel="stylesheet" type="text/css">
+    <meta charset="utf-8">
+    
+    <title> 
+       Net Income and Profit Margin Calculator 
+        
+    </title>
+    </head>
+    <body>
+        <div id="container">
+    <h2>   Calculate Net Income Here     </h2>
+  
+     <form name="net_income_form">
+			
+				<table style="margin:10px;">
+				
+					<tr>
+						<td>Estimated Gross Income  (Q1-Q4):</td>
+						<td><input type="text" id='est_revenue_amt' name="est_revenue_amt" size="10" class="inputs"/></td>
+					</tr>
+					
+					<tr>
+						<td>Current Total Expenses :</td>
+						<td><input type="text" id='expenses_amt' name="expenses_amt" size="10" class="inputs"/></td>
+					</tr>
+				
+					<tr>
+						<td><input type="button" id='submit' onclick="validateOne()" value="Calculate" class="input"/></td>
+						<td><input type="button" id='reset' onclick="startOverOne()" value="Start Over" class="input" /></td>
+					</tr>
+				
+				
+				</table>
+				
+			</form>  
+         <p id ="net_ink"> Net Income Result </p>
+        
+        <p id = "calculated_net_income"> </p>
+            
+            
+            
+            <br>
+            <br>
+        
+        <form name="prof_marg_form">
+			<h3 id= "alr"> Already Know Your Net Income? Calculate Profit Margin Here </h3>
+				<table style="margin:10px;">
+				
+					<tr>
+						<td>Net Income:</td>
+						<td><input type="text" id='net_income_amt' name="net_income_amt" size="10" class="inputs"/></td>
+					</tr>
+					
+					<tr>
+						<td>Current Total Sales Revenue(s) (Q1-Q4) :</td>
+						<td><input type="text" id='revenue_amt' name="revenue_amt" size="10" class="inputs"/></td>
+					</tr>
+					
+				
+					<tr>
+						<td><input type="button" id='submit' onclick="validateTwo()" value="Calculate" class="input"/></td>
+						<td><input type="button" id='reset' onclick="startOverTwo()" value="Start Over" class="input" /></td>
+					</tr>
+				
+				
+				</table>
+			
+			
+			</form>  
+        
+        
+        
+        
+        
+        
+        <div>
+       
+            <p id ="prof_marj"> Profit Margin Result  </p>   
+            <p id ="calculated_profit_margin_result">  </p>
+        
+        </div>
+    
+    
+        </div>
+    <script type="text/javascript" src="net_I_profit_M.js"></script>
+    </body>
+
+
+
+</html>

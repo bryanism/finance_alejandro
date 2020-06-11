@@ -1,0 +1,68 @@
+<! DOCTYPE HTML> 
+<html lang = en> 
+<head>
+      <link href="acid_aesthetic.css" rel="stylesheet" type="text/css">
+    <meta charset="utf-8">
+    
+    <title> 
+        Acid-Test Ratio Calculator 
+        
+    </title>
+    </head>
+    <body>
+        <div id ="container">
+            
+    <h2>   Calculate Acid-Test Ratio Here     </h2>
+  
+     <form name="cash_assets_lie_form">
+			
+				<table style="margin:10px;">
+				
+					<tr>
+						<td>Total Cash and Cash Equivilants:</td>
+						<td><input type="text" id='total_cash_amt' name="total_cash_amt" size="10" class="inputs"/></td>
+					</tr>
+					
+					<tr>
+						<td>Current Total Receivables :</td>
+						<td><input type="text" id='receivables_amt' name="receivables_amt" size="10" class="inputs"/></td>
+					</tr>
+					
+					<tr>
+						<td>Current Total Market Value of Short Term Investments: <br/><span style="font-size:80%">(ex. current portfolio value)</span></td>
+						<td><input type="text" id="short_investments_amt" name="short_investments_amt" size="10" class="inputs"/></td>
+					</tr>
+					
+					<tr>
+						<td>Current Total Liabilities: </td>
+						<td><input type="text" id="total_liabilities" name="total_liabilities" size="10"  class="inputs"/></td>
+					</tr>
+				
+					<tr>
+						<td><input type="button" id='submit' onclick="validate()" value="Calculate" class="input"/></td>
+						<td><input type="button" id='reset' onclick="startOver()" value="Start Over" class="input" /></td>
+					</tr>
+				
+				
+				</table>
+			
+			
+			</form>  
+        
+        <div>
+        <h3> Result </h3>
+        
+        <p id = "calculated_result_acid"> </p>
+        
+        </div>
+    
+    
+    <script type="text/javascript" src="acid.js"></script>
+   
+            
+        </div>
+    </body>
+
+
+
+</html>

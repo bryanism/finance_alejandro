@@ -1,0 +1,62 @@
+<! DOCTYPE HTML> 
+<html lang = en> 
+<head>
+      <link href="div_yield_aesthetic.css" rel="stylesheet" type="text/css">
+    <meta charset="utf-8">
+    
+    <title> 
+       Dividend Yield Calculator 
+        
+    </title>
+    </head>
+    <body>
+        <div id ="container1">
+    <h2>   Calculate Dividend Yield Per Share Here    </h2>
+        <p> Unsure of the exact amount given by the company of your choice? <br> Search <a href="index_stocks_yields.html">HERE</a> for the Annual Cash Dividend given by a wide range of companies.</p>
+  
+     <form name="div_yield_form">
+			
+				<table style="margin:10px;">
+				
+					<tr>
+						<td> Company Name:</td>
+						<td><input type="text" id='company_name' name="company_name" size="10" class="inputs"/></td>
+					</tr>
+					
+					<tr>
+						<td> Market Price for One Share:</td>
+						<td><input type="text" id='asset_value_amt' name="asset_value_amt" size="10" class="inputs"/></td>
+					</tr>
+                <tr>
+						<td> Annual Cash Dividend Per Share: </td>
+						<td><input type="text" id='div_per_share_amt' name="div_per_share_amt" size="10" class="inputs"/></td>
+					</tr>
+				
+					<tr>
+						<td><input type="button" id='submit' onclick="validateStuff()" value="Calculate" class="input"/></td>
+						<td><input type="button" id='reset' onclick="startOverstuff()" value="Start Over" class="input" /></td>
+					</tr>
+				
+				
+				</table>
+			
+			
+			</form>  
+        
+        <div>
+        <h3> Result </h3>
+            
+        
+    
+      <p id = "calculated_result_div_yield"></p> 
+        
+        </div>
+    
+        </div>
+    <script type="text/javascript" src="div_yield.js"></script>
+   
+    </body>
+
+
+
+</html>
